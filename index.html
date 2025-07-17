@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Quantos kilometros de pimbada você da por ano? 🔥</h1>
+      <h1>Quantos quilômetros de pimbada você da por ano? 🔥</h1>
 
       <p>Qual o tamanho do seu Jubileu? (centímetros)</p>
       <input
@@ -43,7 +43,7 @@
         if (tamanhoJubileu > 0 && pimbadasAno > 0 && duracaoPimbada > 0) {
           const resultadoMetros = (duracaoPimbada * 120) * tamanhoJubileu * pimbadasAno / 100;
           const resultadoKm = resultadoMetros / 1000;
-          document.getElementById('resultado').innerText = `Você dá, em média, ${resultadoKm.toLocaleString('pt-BR', {maximumFractionDigits: 2})} km de pimbadas por ano!`;
+          document.getElementById('resultado').innerText = `Você dá, em média, ${resultadoKm.toLocaleString('pt-BR', {maximumFractionDigits: 2})}km de pimbadas por ano!`;
         } else {
           document.getElementById('resultado').innerText = 'Por favor, preencha todos os campos corretamente.';
         }
