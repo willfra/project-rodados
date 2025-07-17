@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Pimbada</title>
+    <title>Calculadora de Pimbada 🔥</title>
     <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#111014" />
   </head>
   <body>
     <div class="container">
@@ -23,7 +24,10 @@
         id="pimbadasAno"
         placeholder="Digite o número de pimbadas ao ano"
       />
-      <p class="p-info">Em média, um homem casado tem 24 pimbadas ao ano, já o solteiro tem entre 5 a 12 pimbadas ao ano</p>
+      <p class="p-info">
+        Em média, um homem casado tem 24 pimbadas ao ano, já o solteiro tem
+        entre 5 a 12 pimbadas ao ano
+      </p>
       <p>Qual a duração da pimbada? (minutos)</p>
       <input
         type="number"
@@ -31,7 +35,8 @@
         placeholder="Digite a duração da pimbada"
       />
       <p class="p-info">Em média a duração de uma pimbada é de 7 minutos</p>
-      <button onclick="
+      <button
+        onclick="
         const tamanhoJubileu = Number(document.getElementById('tamanhoJubileu').value);
         const pimbadasAno = Number(document.getElementById('pimbadasAno').value);
         const duracaoPimbada = Number(document.getElementById('duracaoPimbada').value);
@@ -42,12 +47,14 @@
         } else {
           document.getElementById('resultado').innerText = 'Por favor, preencha todos os campos corretamente.';
         }
-      ">Calcular</button>
-      <hr>
-
-      <p id="resultado"></p>
-    </div>
+      "
+      >
+        Calcular
+      </button>
+      <hr />
+          <p id="resultado"></p>
 
     <script src="script.js"></script>
   </body>
 </html>
+

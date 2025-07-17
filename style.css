@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 .container{
-    background-color: #222020;
+    background-color: #ffffff0e;
     color: #e6e6e6;
     padding: 20px;
     border-radius: 10px;
@@ -38,7 +38,7 @@ input{
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #333333;
+    background-color: #ffffff07;
     color: #e6e6e6;
     margin-bottom: 10px;
     text-align: left;
@@ -53,9 +53,10 @@ button{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 button:hover{
-    background: #e02222;
+    background: linear-gradient(to right, #e02222, #e02222);
     color: #e6e6e6;
     cursor: pointer;
+    transition: 0.5s;
 }
 .p-info{
     font-size: 12px;
@@ -75,8 +76,32 @@ hr {
     display: block;
     width: 100%;
     border: none;
-    border-top: 1px solid #303030;
+    border-top: 1px solid #ffffff10;
     margin: 20px 0;
     height: 1px;
     background: none;
 }
+@media (max-width: 600px) {
+    .container {
+        width: 100vw;
+        max-width: 100vw;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+}
+.modalResultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
