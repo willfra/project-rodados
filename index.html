@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Pimbada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quantos kilometros de pimbada você da por ano? 🔥</h1>
+
+      <p>Qual o tamanho do seu Jubileu? (centímetros)</p>
+      <input
+        type="number"
+        id="tamanhoJubileu"
+        placeholder="Digite o tamanho do seu Jubileu"
+      />
+      <p class="p-info">O tamanho médio Brasileiro é de 15 centímetros ereto</p>
+      <p>Quantas pimbadas você dá ao ano?</p>
+      <input
+        type="number"
+        id="pimbadasAno"
+        placeholder="Digite o número de pimbadas ao ano"
+      />
+      <p class="p-info">Em média, um homem casado tem 24 pimbadas ao ano, já o solteiro tem entre 5 a 12 pimbadas ao ano</p>
+      <p>Qual a duração da pimbada? (minutos)</p>
+      <input
+        type="number"
+        id="duracaoPimbada"
+        placeholder="Digite a duração da pimbada"
+      />
+      <p class="p-info">Em média a duração de uma pimbada é de 7 minutos</p>
+      <button onclick="
+        const tamanhoJubileu = Number(document.getElementById('tamanhoJubileu').value);
+        const pimbadasAno = Number(document.getElementById('pimbadasAno').value);
+        const duracaoPimbada = Number(document.getElementById('duracaoPimbada').value);
+        if (tamanhoJubileu > 0 && pimbadasAno > 0 && duracaoPimbada > 0) {
+          const resultadoMetros = (duracaoPimbada * 120) * tamanhoJubileu * pimbadasAno / 100;
+          const resultadoKm = resultadoMetros / 1000;
+          document.getElementById('resultado').innerText = `Você dá, em média, ${resultadoKm.toLocaleString('pt-BR', {maximumFractionDigits: 2})} km de pimbadas por ano!`;
+        } else {
+          document.getElementById('resultado').innerText = 'Por favor, preencha todos os campos corretamente.';
+        }
+      ">Calcular</button>
+      <hr>
+
+      <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
